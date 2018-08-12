@@ -5,8 +5,8 @@ Support by : Mastah Ervan
 */
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
-$channelAccessToken = 'gjMl1nohjAv8HHZmZ131BIRTFnzNno8+OGTfxKPP62xHRZ4azGDLRDw9Yo3zHs3DAt9T/GIpiVOpNJeeTfUKiG/jnAD+JhsSV8fiaB1AizT82Nze/6RlO5Hwq7+dKzzKgUY6LKJVxdiQA36mxNGnOQdB04t89/1O/w1cDnyilFU='; #ChannelAccessToken (paste token akses kamu disini)
-$channelSecret = 'e3654eaf5d04179128c567e66a9e409e';#Channel Secret (paste token secret kamu disini)
+$channelAccessToken = 'S7nrpQm6sGvTaQajF3h9XBYUuocq2B5EVrkiRQQd47jZ4ifrldtV9CdmLBZfOD3bVOsSAGag1+JlqBuAZZfDez/X5Xu6avs01tm2l01cfLt+ARJOfu0wZwh0UPzGz1+1U/I0iUqAQWNQQRz9kkMyiQdB04t89/1O/w1cDnyilFU='; #ChannelAccessToken (paste token akses kamu disini)
+$channelSecret = 'f84ed216c02fe885eae3df942aac7c52';#Channel Secret (paste token secret kamu disini)
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $userId 	= $client->parseEvents()[0]['source']['userId'];
 $groupId 	= $client->parseEvents()[0]['source']['groupId'];
@@ -500,7 +500,7 @@ if ($type == 'join') {
         //array (
           //'type' => 'uri',
           //'label' => 'View detail',
-          //'uri' => 'https://line.me/ti/p/~heefpuy',
+          //'uri' => 'https://line.me/ti/p/~nugi.m',
         //),
         'actions' =>
         array (
@@ -516,7 +516,7 @@ if ($type == 'join') {
         array (
           'type': 'uri',
           'label': 'Creator',
-          'uri': 'https://line.me/ti/p/~heefpuy'
+          'uri': 'https://line.me/ti/p/~nugi.m'
         ),
       ),
     ),
@@ -568,7 +568,7 @@ if($message['type']=='text') {
                 array(
 										'type' => 'text',					
 										'text' => '「 Creator  」'
-Creator: 'The Beginning of this Bot Comes from Rynda, Im just Reworked This!\n\nOf Course Special Thanks To Rynda And the Friends Around Me.\nCreator -> https://line.me/ti/p/~heefpuy'
+Creator: 'The Beginning of this Bot Comes from Nugi, Im just Reworked This!\n\nOf Course Special Thanks To Rynda And the Friends Around Me.\nCreator -> https://line.me/ti/p/~nugi.m'
 									)
 							)
 						);
